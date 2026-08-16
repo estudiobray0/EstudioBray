@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "title": "Estudio Bray: sitios web rápidos, a tu medida",
+    "description": "Sitios claros, armados contigo. Rápido, a la medida de tu negocio, y siempre hablas conmigo. El pedido cierra en WhatsApp."
+  },
+  "nav": {
+    "work": "Trabajos",
+    "services": "Servicios",
+    "process": "Cómo es",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "kicker": "Rápido. A tu medida. Contigo.",
+    "title": "Un sitio claro, hecho para tu negocio. No una plantilla.",
+    "body": "Lo armo yo, contigo. Lo ves pronto. Lo ajustamos hasta que encaje. Tú actualizas. El pedido cierra en WhatsApp.",
+    "cta": "Pedir cotización",
+    "seeWork": "Ver VIVI",
+    "whatsapp": "Hola Bray, quiero un sitio."
+  },
+  "trust": {
+    "items": {
+      "speed": {
+        "name": "Rápido",
+        "blurb": "Un sitio suele tardar 3 o 4 meses. Conmigo, bastante menos."
+      },
+      "fit": {
+        "name": "A tu medida",
+        "blurb": "Se arma para tu negocio: cómo vendes, qué editas, cómo se ve."
+      },
+      "personal": {
+        "name": "Contigo",
+        "blurb": "Hablas conmigo. WhatsApp, no un formulario ni un ticket."
+      },
+      "quality": {
+        "name": "Calidad de EE. UU.",
+        "blurb": "El cuidado y el estándar de un trabajo hecho en Estados Unidos."
+      }
+    }
+  },
+  "work": {
+    "title": "Trabajos",
+    "intro": "Sitios reales, ya publicados.",
+    "featured": "Destacado",
+    "more": "También",
+    "visit": "Visitar sitio",
+    "items": {
+      "ghevans": {
+        "place": "Turismo",
+        "summary": "Tours privados. Orlando escribe en español; el sitio habla inglés, portugués y francés."
+      },
+      "bolivia": {
+        "place": "Visas",
+        "summary": "Tiene que verse seria en muchos idiomas. El contacto cierra por WhatsApp."
+      },
+      "vivi": {
+        "place": "Taller",
+        "summary": "El taller de Mayra. Ella publica las piezas. El pedido se arma en WhatsApp."
+      }
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "intro": "Tres formas de empezar. Lo adaptamos a ti. Hablamos y te mando una cotización.",
+    "talk": "Hablar de este",
+    "whatsapp": "Hola Bray, me interesa {name}.",
+    "items": {
+      "presencia": {
+        "name": "Presencia",
+        "blurb": "Una página clara, rápido: quién eres, qué haces, WhatsApp."
+      },
+      "catalogo": {
+        "name": "Catálogo",
+        "blurb": "Tours, piezas o servicios que tú mismo editas. Armado a tu forma de vender."
+      },
+      "idiomas": {
+        "name": "Varios idiomas",
+        "blurb": "El sitio en el idioma de tus clientes, no solo en el tuyo."
+      }
+    }
+  },
+  "process": {
+    "title": "Cómo es",
+    "steps": {
+      "1": { "title": "Hablamos", "body": "WhatsApp, conmigo. Me cuentas el negocio." },
+      "2": { "title": "Cotización", "body": "Un precio por escrito. Nada se arma antes." },
+      "3": { "title": "Lo ves pronto", "body": "Enlace de prueba. Cambiamos lo que no encaje." },
+      "4": { "title": "Al aire", "body": "Dominio apuntado. Tú editas. Yo lo dejo vivo." }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "body": "Soy Bray. Cuéntame el negocio. Te respondo yo, y te mando una cotización por WhatsApp.",
+    "cta": "Abrir WhatsApp",
+    "whatsapp": "Hola Bray, quiero un sitio."
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre mí: Estudio Bray",
+      "description": "Soy Bray, desarrollador web de Estados Unidos. Calidad técnica de EE.UU. y respeto por cómo trabajas. Sitios de persona a persona, sin jerga ni promesas falsas."
+    },
+    "kicker": "Sobre mí",
+    "title": "Soy Bray.",
+    "photoAlt": "Bray",
+    "who": {
+      "heading": "Quién soy",
+      "paragraphs": [
+        "Hola. Soy Bray, desarrollador web de Estados Unidos. Estudié administración de empresas, y pasé tres meses en Cusco donde descubrí algo importante: la calidad técnica que traigo de mi formación en EE.UU., unida al respeto genuino por cómo ustedes trabajan aquí, es lo que hace la diferencia.",
+        "No estoy aquí para venderles soluciones genéricas. Trabajo directamente con negocios reales, persona a persona. Entiendo que una web no es un lujo. Es tu tienda, tu portada, tu relación con tus clientes.",
+        "Amo esta cultura. La forma de trabajar, la gente, la confianza que construyen. Por eso estoy aquí. Estudio Bray existe para hacer sitios que funcionen como tú necesitas, sin jerga y sin promesas falsas."
+      ]
+    },
+    "how": {
+      "heading": "Qué puedes esperar",
+      "paragraphs": [
+        "Rapidez, mucha comunicación, y un sitio hecho para ti.",
+        "Un sitio suele tardar tres o cuatro meses. Conmigo, bastante menos. Hablamos por WhatsApp. Lo ves pronto. Lo ajustamos hasta que encaje."
+      ]
+    },
+    "needs": {
+      "heading": "Lo que me ayuda",
+      "intro": "Si puedes mandarme esto, el sitio se parece más a ti. No pasa nada si aún no tienes todo.",
+      "items": {
+        "photos": {
+          "name": "Fotos",
+          "blurb": "Las tuyas, de tu trabajo, de tu lugar."
+        },
+        "story": {
+          "name": "El negocio, en tus palabras",
+          "blurb": "Quién eres, qué haces, para quién. Aunque sea unas líneas."
+        },
+        "palette": {
+          "name": "Colores",
+          "blurb": "Los que te gusten, o una paleta si ya la tienes."
+        },
+        "references": {
+          "name": "Sitios de referencia",
+          "blurb": "Páginas que te gustan. Así veo el rumbo."
+        },
+        "gmail": {
+          "name": "Un Gmail",
+          "blurb": "Te doy acceso para que tú edites el sitio."
+        }
+      }
+    },
+    "cta": "Escribirme",
+    "whatsapp": "Hola Bray, leí sobre ti y quiero un sitio."
+  },
+  "language": {
+    "label": "English",
+    "switch": "Cambiar a English"
+  },
+  "footer": {
+    "note": "Sitios web"
+  }
+}

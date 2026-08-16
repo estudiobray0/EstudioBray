@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "title": "Estudio Bray: fast websites, built around you",
+    "description": "Clear sites, built with you. Fast, fitted to your business, and you always talk to me. Sales close on WhatsApp."
+  },
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "process": "How it works",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Fast. Fitted to you. Built with you.",
+    "title": "A clear site for your business. Not a template.",
+    "body": "I build it with you. You see it soon. We adjust until it fits. You update it. Sales close on WhatsApp.",
+    "cta": "Ask for a quote",
+    "seeWork": "See VIVI",
+    "whatsapp": "Hi Bray, I want a website."
+  },
+  "trust": {
+    "items": {
+      "speed": {
+        "name": "Fast",
+        "blurb": "A website usually takes 3 to 4 months. With me, a lot less."
+      },
+      "fit": {
+        "name": "Fitted to you",
+        "blurb": "Built around how you sell, what you edit, and how it should look."
+      },
+      "personal": {
+        "name": "With you",
+        "blurb": "You talk to me. WhatsApp, not a form or a ticket."
+      },
+      "quality": {
+        "name": "US quality",
+        "blurb": "The care and standard of work built in the United States."
+      }
+    }
+  },
+  "work": {
+    "title": "Work",
+    "intro": "Live sites, already online.",
+    "featured": "Featured",
+    "more": "Also",
+    "visit": "Visit site",
+    "items": {
+      "ghevans": {
+        "place": "Tours",
+        "summary": "Private tours. Orlando writes in Spanish; the site speaks English, Portuguese, and French."
+      },
+      "bolivia": {
+        "place": "Visas",
+        "summary": "It has to look official in many languages. Contact closes on WhatsApp."
+      },
+      "vivi": {
+        "place": "Studio",
+        "summary": "Mayra’s studio. She publishes the pieces. Orders go out on WhatsApp."
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Three ways to start. We shape it around you. We talk, then I send a quote.",
+    "talk": "Talk about this",
+    "whatsapp": "Hi Bray, I’m interested in {name}.",
+    "items": {
+      "presencia": {
+        "name": "Presence",
+        "blurb": "One clear page, quickly: who you are, what you do, WhatsApp."
+      },
+      "catalogo": {
+        "name": "Catalog",
+        "blurb": "Tours, pieces, or services you edit yourself. Built around how you sell."
+      },
+      "idiomas": {
+        "name": "Several languages",
+        "blurb": "The site in your customers’ language, not only yours."
+      }
+    }
+  },
+  "process": {
+    "title": "How it works",
+    "steps": {
+      "1": { "title": "We talk", "body": "WhatsApp, with me. You tell me about the business." },
+      "2": { "title": "Quote", "body": "A price in writing. Nothing is built before that." },
+      "3": { "title": "You see it soon", "body": "A preview link. We change what doesn’t fit." },
+      "4": { "title": "It goes live", "body": "Domain pointed. You edit. I keep it online." }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "I’m Bray. Tell me about the business. I’ll answer you myself, and send a quote on WhatsApp.",
+    "cta": "Open WhatsApp",
+    "whatsapp": "Hi Bray, I want a website."
+  },
+  "about": {
+    "meta": {
+      "title": "About: Estudio Bray",
+      "description": "I’m Bray, a web developer from the United States. US technical quality and real respect for how you work. Sites person to person. No jargon and no empty promises."
+    },
+    "kicker": "About",
+    "title": "I’m Bray.",
+    "photoAlt": "Bray",
+    "who": {
+      "heading": "Who I am",
+      "paragraphs": [
+        "Hi. I’m Bray, a web developer from the United States. I studied business, and I spent three months in Cusco where I found something that matters: the technical quality I bring from my training in the US, together with genuine respect for how you work here, is what makes the difference.",
+        "I’m not here to sell you a generic solution. I work directly with real businesses, person to person. A website isn’t a luxury. It’s your shop, your storefront, your relationship with your customers.",
+        "I love this culture. The way of working, the people, the trust you build. That’s why I’m here. Estudio Bray exists to make sites that work the way you need. No jargon and no empty promises."
+      ]
+    },
+    "how": {
+      "heading": "What you can expect",
+      "paragraphs": [
+        "Speed, close communication, and a site built around you.",
+        "A website usually takes three or four months. With me, a lot less. We talk on WhatsApp. You see it soon. We adjust until it fits."
+      ]
+    },
+    "needs": {
+      "heading": "What helps me",
+      "intro": "If you can send these, the site will feel more like you. It’s fine if you don’t have everything yet.",
+      "items": {
+        "photos": {
+          "name": "Photos",
+          "blurb": "Yours, of your work, of your place."
+        },
+        "story": {
+          "name": "The business, in your words",
+          "blurb": "Who you are, what you do, who it’s for. Even a few lines."
+        },
+        "palette": {
+          "name": "Colors",
+          "blurb": "Ones you like, or a palette if you already have one."
+        },
+        "references": {
+          "name": "Site references",
+          "blurb": "Pages you like. That’s how I see the direction."
+        },
+        "gmail": {
+          "name": "A Gmail",
+          "blurb": "I’ll give you access so you can edit the site."
+        }
+      }
+    },
+    "cta": "Write to me",
+    "whatsapp": "Hi Bray, I read about you and I want a website."
+  },
+  "language": {
+    "label": "Spanish",
+    "switch": "Switch to Spanish"
+  },
+  "footer": {
+    "note": "Websites"
+  }
+}
