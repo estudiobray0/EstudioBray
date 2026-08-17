@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { WhatsAppLink } from "@/components/WhatsAppLink";
-import { needIds } from "@/lib/site";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -42,16 +41,27 @@ export default async function AboutPage({ params }: Props) {
           {t("title")}
         </h1>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(20rem,1fr)_minmax(0,1.15fr)] lg:gap-14">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-line lg:aspect-auto lg:min-h-full">
-            <Image
-              src="/bray.jpg"
-              alt={t("photoAlt")}
-              fill
-              priority
-              sizes="(min-width: 1024px) 45vw, 100vw"
-              className="object-cover object-top"
-            />
+        <div className="mt-12 grid items-start gap-10 lg:grid-cols-[minmax(18rem,22rem)_1fr] lg:gap-14">
+          <div className="space-y-4">
+            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-line">
+              <Image
+                src="/bray-portrait.png"
+                alt={t("photoAlt")}
+                fill
+                priority
+                sizes="(min-width: 1024px) 352px, 100vw"
+                className="object-cover object-[58%_12%]"
+              />
+            </div>
+            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-line">
+              <Image
+                src="/bray-cusco.png"
+                alt={t("photoCuscoAlt")}
+                fill
+                sizes="(min-width: 1024px) 352px, 100vw"
+                className="object-cover object-[48%_42%]"
+              />
+            </div>
           </div>
 
           <div className="max-w-2xl">
@@ -73,30 +83,6 @@ export default async function AboutPage({ params }: Props) {
               ))}
             </div>
 
-            <h2 className="text-blue mt-12 text-sm">{t("needs.heading")}</h2>
-            <p className="mt-4 text-lg leading-relaxed text-ink/90">{t("needs.intro")}</p>
-            <ul className="mt-8 space-y-5">
-              {needIds.map((id, index) => {
-                const accents = [
-                  "bg-brown",
-                  "bg-sage",
-                  "bg-blue",
-                  "bg-brown",
-                  "bg-sage",
-                ] as const;
-                return (
-                  <li key={id} className="flex gap-4">
-                    <span className={`${accents[index]} mt-2 size-2 shrink-0 rounded-full`} />
-                    <div>
-                      <p className="font-medium">{t(`needs.items.${id}.name`)}</p>
-                      <p className="mt-1 leading-relaxed text-muted">
-                        {t(`needs.items.${id}.blurb`)}
-                      </p>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
             <WhatsAppLink
               className="btn-primary mt-12 inline-flex rounded-full px-5 py-2.5 text-sm"
               text={t("whatsapp")}

@@ -11,11 +11,14 @@
     "contact": "Contacto"
   },
   "hero": {
-    "kicker": "Rápido. A tu medida. Contigo.",
-    "title": "Un sitio claro, hecho para tu negocio. No una plantilla.",
-    "body": "Lo armo yo, contigo. Lo ves pronto. Lo ajustamos hasta que encaje. Tú actualizas. El pedido cierra en WhatsApp.",
+    "kicker": "Sitios web",
+    "title": "Tu sitio, como tú lo quieres.",
+    "body": "Soy Bray. Armo sitios web.",
+    "together": "Lo ves pronto. Lo ajustamos hasta que encaje.",
     "cta": "Pedir cotización",
-    "seeWork": "Ver VIVI",
+    "seeWork": "Saber más",
+    "createdBy": "Creado por Bray",
+    "withMe": "Conmigo",
     "whatsapp": "Hola Bray, quiero un sitio."
   },
   "trust": {
@@ -26,11 +29,11 @@
       },
       "fit": {
         "name": "A tu medida",
-        "blurb": "Se arma para tu negocio: cómo vendes, qué editas, cómo se ve."
+        "blurb": "Se arma para tu negocio, tus clientes y todo lo que necesitas."
       },
       "personal": {
-        "name": "Contigo",
-        "blurb": "Hablas conmigo. WhatsApp, no un formulario ni un ticket."
+        "name": "Conexión",
+        "blurb": "Una conexión de confianza, que quiere que tú salgas adelante."
       },
       "quality": {
         "name": "Calidad de EE. UU.",
@@ -42,7 +45,7 @@
     "title": "Trabajos",
     "intro": "Sitios reales, ya publicados.",
     "featured": "Destacado",
-    "more": "También",
+    "more": "Sitios en vivo",
     "visit": "Visitar sitio",
     "items": {
       "ghevans": {
@@ -61,21 +64,31 @@
   },
   "services": {
     "title": "Servicios",
-    "intro": "Tres formas de empezar. Lo adaptamos a ti. Hablamos y te mando una cotización.",
-    "talk": "Hablar de este",
-    "whatsapp": "Hola Bray, me interesa {name}.",
+    "intro": "Lo que puede entrar en tu sitio. No es un paquete: armamos lo que necesitas.",
     "items": {
-      "presencia": {
-        "name": "Presencia",
-        "blurb": "Una página clara, rápido: quién eres, qué haces, WhatsApp."
-      },
-      "catalogo": {
-        "name": "Catálogo",
-        "blurb": "Tours, piezas o servicios que tú mismo editas. Armado a tu forma de vender."
+      "whatsapp": {
+        "name": "WhatsApp",
+        "blurb": "El botón y el chat. Te escriben a ti, no a un formulario."
       },
       "idiomas": {
         "name": "Varios idiomas",
         "blurb": "El sitio en el idioma de tus clientes, no solo en el tuyo."
+      },
+      "editor": {
+        "name": "Tú editas",
+        "blurb": "Cambias textos, fotos y precios. Te doy acceso con tu Gmail."
+      },
+      "catalogo": {
+        "name": "Catálogo",
+        "blurb": "Tours, piezas o servicios, como tú los vendes."
+      },
+      "pagina": {
+        "name": "Una página clara",
+        "blurb": "Quién eres, qué haces, cómo contactarte."
+      },
+      "dominio": {
+        "name": "Al aire",
+        "blurb": "Tu dominio, el sitio publicado. Yo lo dejo vivo."
       }
     }
   },
@@ -84,7 +97,7 @@
     "steps": {
       "1": { "title": "Hablamos", "body": "WhatsApp, conmigo. Me cuentas el negocio." },
       "2": { "title": "Cotización", "body": "Un precio por escrito. Nada se arma antes." },
-      "3": { "title": "Lo ves pronto", "body": "Enlace de prueba. Cambiamos lo que no encaje." },
+      "3": { "title": "Vista previa", "body": "Enlace de prueba. Cambiamos lo que no encaje." },
       "4": { "title": "Al aire", "body": "Dominio apuntado. Tú editas. Yo lo dejo vivo." }
     }
   },
@@ -94,6 +107,17 @@
     "cta": "Abrir WhatsApp",
     "whatsapp": "Hola Bray, quiero un sitio."
   },
+  "chat": {
+    "name": "Bray",
+    "question": "¿Quieres un sitio web?",
+    "cta": "Escríbeme",
+    "intro": "Cuéntame qué buscas o cualquier pregunta. Te abro WhatsApp con tu mensaje listo.",
+    "whatsapp": "Hola Bray, tengo una pregunta.",
+    "placeholder": "Escribe tu mensaje",
+    "send": "Abrir en WhatsApp",
+    "close": "Cerrar",
+    "open": "Escribir por WhatsApp"
+  },
   "about": {
     "meta": {
       "title": "Sobre mí: Estudio Bray",
@@ -102,6 +126,7 @@
     "kicker": "Sobre mí",
     "title": "Soy Bray.",
     "photoAlt": "Bray",
+    "photoCuscoAlt": "Bray en Machu Picchu",
     "who": {
       "heading": "Quién soy",
       "paragraphs": [

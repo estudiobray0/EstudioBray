@@ -12,9 +12,9 @@ export async function Header() {
   const home = locale === "en" ? "/en" : "";
 
   const sections = [
+    { href: `${home}/#proceso`, label: t("process") },
     { href: `${home}/#trabajos`, label: t("work") },
     { href: `${home}/#servicios`, label: t("services") },
-    { href: `${home}/#proceso`, label: t("process") },
   ];
 
   return (

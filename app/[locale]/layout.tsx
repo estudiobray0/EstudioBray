@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { WhatsAppCue } from "@/components/WhatsAppCue";
 import { site } from "@/lib/site";
 import "../globals.css";
 
@@ -63,6 +64,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Header />
             {children}
             <SiteFooter />
+            <WhatsAppCue />
           </div>
         </NextIntlClientProvider>
       </body>

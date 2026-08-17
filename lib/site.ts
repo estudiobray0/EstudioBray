@@ -31,8 +31,15 @@ export const moreWorks = [
 
 export const works = [featuredWork, ...moreWorks];
 
-export const packageIds = ["presencia", "catalogo", "idiomas"] as const;
-export const trustIds = ["speed", "fit", "personal", "quality"] as const;
+export const capabilityIds = [
+  "whatsapp",
+  "idiomas",
+  "editor",
+  "catalogo",
+  "pagina",
+  "dominio",
+] as const;
+export const trustIds = ["speed", "fit", "personal"] as const;
 export const needIds = ["photos", "story", "palette", "references", "gmail"] as const;
 export const stepIds = ["1", "2", "3", "4"] as const;
 
