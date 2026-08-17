@@ -19,7 +19,7 @@
     "seeWork": "Learn more",
     "createdBy": "Created by Bray",
     "withMe": "With me",
-    "whatsapp": "Hi Bray, I want a website."
+    "whatsapp": "Hi Bray, I’m interested in a page for my business. Could you send me a quote?"
   },
   "trust": {
     "items": {
@@ -105,7 +105,7 @@
     "title": "Contact",
     "body": "I’m Bray. Tell me about the business. I’ll answer you myself, and send a quote on WhatsApp.",
     "cta": "Open WhatsApp",
-    "whatsapp": "Hi Bray, I want a website."
+    "whatsapp": "Hi Bray, I’m interested in a page for my business. Could you send me a quote?"
   },
   "chat": {
     "name": "Bray",

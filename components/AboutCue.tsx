@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import { Signature } from "@/components/Signature";
 
 export function AboutCue({
   credit,
@@ -44,6 +45,7 @@ export function AboutCue({
           />
         </svg>
       </span>
+      <Signature className="mt-3 w-56" />
     </Link>
   );
 }

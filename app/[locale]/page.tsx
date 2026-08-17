@@ -4,6 +4,7 @@ import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { WorkShot } from "@/components/WorkShot";
 import { AboutCue } from "@/components/AboutCue";
 import { ProcessStepIcon } from "@/components/ProcessStepIcon";
+import { Signature } from "@/components/Signature";
 import { featuredWork, moreWorks, needIds, capabilityIds, site, stepIds, trustIds } from "@/lib/site";
 
 type Props = {
@@ -292,6 +293,7 @@ export default async function Home({ params }: Props) {
                 {site.email}
               </a>
             </p>
+            <Signature invert className="mt-8 w-40 opacity-90" />
           </div>
         </section>
       </main>
