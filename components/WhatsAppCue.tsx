@@ -155,7 +155,7 @@ export function WhatsAppCue() {
       ) : (
         <button
           type="button"
-          onClick={openPanel}
+          onClick={() => openPanel()}
           tabIndex={promptOpen ? 0 : -1}
           aria-hidden={!promptOpen}
           className={`pointer-events-auto max-w-[12.5rem] rounded-2xl rounded-br-md border border-line bg-white px-3 py-2 text-left text-xs leading-snug text-ink transition-colors hover:border-sage ${
