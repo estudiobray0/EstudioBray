@@ -94,7 +94,7 @@ export function WhatsAppCue() {
   }
 
   return (
-    <div className="pointer-events-none fixed right-4 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-50 hidden sm:right-6 sm:bottom-8 lg:block">
+    <div className="pointer-events-none fixed right-4 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-50 sm:right-6 sm:bottom-8">
       <div
         className="pointer-events-auto flex flex-col items-end gap-2"
         onMouseEnter={stayOpen}
