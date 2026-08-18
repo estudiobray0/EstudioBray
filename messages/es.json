@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Estudio Bray: sitios web rápidos, a tu medida",
-    "description": "Sitios claros, armados contigo. Rápido, a la medida de tu negocio, y siempre hablas conmigo. El pedido cierra en WhatsApp."
+    "title": "Estudio Bray: sitios web desde cero, a tu medida",
+    "description": "Sitios claros, armados desde cero contigo. Rápido, a la medida de tu negocio, y siempre hablas conmigo. El pedido cierra en WhatsApp."
   },
   "nav": {
     "work": "Trabajos",
@@ -11,9 +11,9 @@
     "contact": "Contacto"
   },
   "hero": {
-    "kicker": "Sitios web",
+    "kicker": "Sitios web desde cero",
     "title": "Tu sitio, como tú lo quieres.",
-    "body": "Soy Bray. Armo sitios web.",
+    "body": "Soy Bray. Armo cada sitio desde cero.",
     "together": "Lo ves pronto. Lo ajustamos hasta que encaje.",
     "cta": "Pedir cotización",
     "seeWork": "Saber más",
@@ -64,7 +64,7 @@
   },
   "services": {
     "title": "Servicios",
-    "intro": "Lo que puede entrar en tu sitio. No es un paquete: armamos lo que necesitas.",
+    "intro": "Lo que puede entrar en tu sitio. Lo armo desde cero, a lo que necesitas.",
     "items": {
       "whatsapp": {
         "name": "WhatsApp",
@@ -95,7 +95,7 @@
   "process": {
     "title": "Cómo es",
     "steps": {
-      "1": { "title": "Hablamos", "body": "WhatsApp, conmigo. Me cuentas el negocio." },
+      "1": { "title": "Hablamos", "body": "WhatsApp, conmigo. Hablamos de crear lo que tú quieras." },
       "2": { "title": "Cotización", "body": "Un precio por escrito. Nada se arma antes." },
       "3": { "title": "Vista previa", "body": "Enlace de prueba. Cambiamos lo que no encaje." },
       "4": { "title": "Al aire", "body": "Dominio apuntado. Tú editas. Yo lo dejo vivo." }
@@ -109,7 +109,7 @@
   },
   "chat": {
     "name": "Bray",
-    "question": "¿Quieres un sitio web?",
+    "question": "¿Preguntas sobre un sitio web?",
     "cta": "Escríbeme",
     "intro": "Cuéntame qué buscas o cualquier pregunta. Te abro WhatsApp con tu mensaje listo.",
     "whatsapp": "Hola Bray, tengo una pregunta.",
@@ -138,7 +138,7 @@
     "how": {
       "heading": "Qué puedes esperar",
       "paragraphs": [
-        "Rapidez, mucha comunicación, y un sitio hecho para ti.",
+        "Rapidez, mucha comunicación, y un sitio armado desde cero para ti.",
         "Un sitio suele tardar tres o cuatro meses. Conmigo, bastante menos. Hablamos por WhatsApp. Lo ves pronto. Lo ajustamos hasta que encaje."
       ]
     },
@@ -176,6 +176,6 @@
     "switch": "Cambiar a English"
   },
   "footer": {
-    "note": "Sitios web"
+    "note": "Sitios web desde cero"
   }
 }

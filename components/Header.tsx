@@ -1,6 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { BrandMark } from "@/components/BrandMark";
 import { LanguageSwitch } from "@/components/LanguageSwitch";
+import { Seal } from "@/components/Seal";
 import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
@@ -20,9 +21,10 @@ export async function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-paper/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-4">
-        <Link href="/" className="group/mark flex items-center gap-3 text-[15px] font-medium">
+        <Link href="/" className="group/mark flex items-center gap-2.5 text-[15px] font-medium">
           <BrandMark />
           {site.name}
+          <Seal variant="header" />
         </Link>
         <nav className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm">
           {sections.map((item) => (

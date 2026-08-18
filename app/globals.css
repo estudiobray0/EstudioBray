@@ -223,6 +223,93 @@ body::before {
   }
 }
 
+@keyframes seal-glisten {
+  0%,
+  18%,
+  100% {
+    transform: translateX(-140%);
+  }
+  78% {
+    transform: translateX(140%);
+  }
+}
+
+.seal-stamp {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--brown) 72%, #c4a24a);
+  background:
+    repeating-linear-gradient(
+      -22deg,
+      transparent 0 2px,
+      rgb(60 51 43 / 0.05) 2px 3px
+    ),
+    color-mix(in srgb, var(--paper) 78%, #e8c85a);
+  pointer-events: none;
+}
+
+.seal-stamp::after {
+  content: "";
+  position: absolute;
+  inset: -25% -60%;
+  z-index: 2;
+  background: linear-gradient(
+    115deg,
+    transparent 36%,
+    rgb(255 220 110 / 0.55) 50%,
+    transparent 64%
+  );
+  animation: seal-glisten 5.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.seal-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.seal-shot {
+  position: absolute;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  z-index: 10;
+  width: 3.1rem;
+  height: 3.1rem;
+  transform: rotate(-7deg);
+}
+
+.seal-header {
+  position: relative;
+  width: 1.85rem;
+  height: 1.85rem;
+  transform: rotate(-6deg);
+}
+
+.seal-shot .seal-mark {
+  width: 2.05rem;
+}
+
+.seal-header .seal-mark {
+  width: 1.2rem;
+}
+
+.seal-mark {
+  position: relative;
+  z-index: 1;
+  display: block;
+  aspect-ratio: 1092 / 732;
+  background: var(--ink);
+  -webkit-mask: url("/bray-bc.png") center / contain no-repeat;
+  mask: url("/bray-bc.png") center / contain no-repeat;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .reveal-delay-1,
@@ -240,7 +327,8 @@ body::before {
   .chat-prompt-out,
   .chat-wave-dot,
   .chat-dots:hover .chat-wave-dot,
-  .chat-dots.chat-dots--burst .chat-wave-dot {
+  .chat-dots.chat-dots--burst .chat-wave-dot,
+  .seal-stamp::after {
     animation: none;
   }
 

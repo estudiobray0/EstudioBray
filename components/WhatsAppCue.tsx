@@ -16,6 +16,8 @@ export function WhatsAppCue() {
   const [burst, setBurst] = useState(false);
   const field = useRef<HTMLTextAreaElement>(null);
   const burstTimer = useRef(0);
+  const hoverTimer = useRef(0);
+  const openedByHover = useRef(false);
 
   function playWave() {
     window.clearTimeout(burstTimer.current);
@@ -27,7 +29,10 @@ export function WhatsAppCue() {
   }
 
   useEffect(() => {
-    return () => window.clearTimeout(burstTimer.current);
+    return () => {
+      window.clearTimeout(burstTimer.current);
+      window.clearTimeout(hoverTimer.current);
+    };
   }, []);
 
   useEffect(() => {
@@ -56,7 +61,7 @@ export function WhatsAppCue() {
 
   useEffect(() => {
     if (!panelOpen) return;
-    field.current?.focus();
+    if (!openedByHover.current) field.current?.focus();
 
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") setPanelOpen(false);
@@ -65,9 +70,19 @@ export function WhatsAppCue() {
     return () => window.removeEventListener("keydown", onKey);
   }, [panelOpen]);
 
-  function openPanel() {
+  function openPanel(fromHover = false) {
+    openedByHover.current = fromHover;
     setPanelOpen(true);
     setPromptOpen(false);
+  }
+
+  function closeSoon() {
+    window.clearTimeout(hoverTimer.current);
+    hoverTimer.current = window.setTimeout(() => setPanelOpen(false), 220);
+  }
+
+  function stayOpen() {
+    window.clearTimeout(hoverTimer.current);
   }
 
   function send(event: FormEvent) {
@@ -79,7 +94,12 @@ export function WhatsAppCue() {
   }
 
   return (
-    <div className="pointer-events-none fixed right-4 bottom-5 z-50 flex flex-col items-end gap-2 sm:right-6 sm:bottom-8">
+    <div className="pointer-events-none fixed right-4 bottom-5 z-50 sm:right-6 sm:bottom-8">
+      <div
+        className="pointer-events-auto flex flex-col items-end gap-2"
+        onMouseEnter={stayOpen}
+        onMouseLeave={closeSoon}
+      >
       {panelOpen ? (
         <form
           id={panelId}
@@ -150,16 +170,24 @@ export function WhatsAppCue() {
       )}
       <button
         type="button"
-        onMouseEnter={playWave}
+        onMouseEnter={() => {
+          playWave();
+          stayOpen();
+          openPanel(true);
+        }}
         onClick={() => {
           playWave();
+          if (openedByHover.current && panelOpen) {
+            openedByHover.current = false;
+            return;
+          }
           if (panelOpen) setPanelOpen(false);
-          else openPanel();
+          else openPanel(false);
         }}
         aria-expanded={panelOpen}
         aria-controls={panelOpen ? panelId : undefined}
         aria-label={panelOpen ? t("close") : t("open")}
-        className={`chat-dots pointer-events-auto flex items-center gap-1.5 p-1 ${
+        className={`chat-dots flex items-center gap-1.5 p-1 ${
           burst ? "chat-dots--burst" : ""
         }`}
       >
@@ -167,6 +195,7 @@ export function WhatsAppCue() {
         <span className="chat-wave-dot bg-sage size-4 rounded-full" />
         <span className="chat-wave-dot bg-blue size-4 rounded-full" />
       </button>
+      </div>
     </div>
   );
 }

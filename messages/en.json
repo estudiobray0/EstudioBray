@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Estudio Bray: fast websites, built around you",
-    "description": "Clear sites, built with you. Fast, fitted to your business, and you always talk to me. Sales close on WhatsApp."
+    "title": "Estudio Bray: websites from scratch, built around you",
+    "description": "Clear sites, built from scratch with you. Fast, fitted to your business, and you always talk to me. Sales close on WhatsApp."
   },
   "nav": {
     "work": "Work",
@@ -11,9 +11,9 @@
     "contact": "Contact"
   },
   "hero": {
-    "kicker": "Websites",
+    "kicker": "Websites from scratch",
     "title": "Your site, how you want it.",
-    "body": "I’m Bray. I build websites.",
+    "body": "I’m Bray. I build each site from scratch.",
     "together": "You see it soon. We adjust until it fits.",
     "cta": "Ask for a quote",
     "seeWork": "Learn more",
@@ -64,7 +64,7 @@
   },
   "services": {
     "title": "Services",
-    "intro": "What can go in your site. Not a package: we build what you need.",
+    "intro": "What can go in your site. I build it from scratch, around what you need.",
     "items": {
       "whatsapp": {
         "name": "WhatsApp",
@@ -95,7 +95,7 @@
   "process": {
     "title": "How it works",
     "steps": {
-      "1": { "title": "We talk", "body": "WhatsApp, with me. You tell me about the business." },
+      "1": { "title": "We talk", "body": "WhatsApp, with me. We talk about creating whatever you want." },
       "2": { "title": "Quote", "body": "A price in writing. Nothing is built before that." },
       "3": { "title": "Preview", "body": "A preview link. We change what doesn’t fit." },
       "4": { "title": "It goes live", "body": "Domain pointed. You edit. I keep it online." }
@@ -109,7 +109,7 @@
   },
   "chat": {
     "name": "Bray",
-    "question": "Want a website?",
+    "question": "Questions about a website?",
     "cta": "Write to me",
     "intro": "Tell me what you need, or any question. I’ll open WhatsApp with your message ready.",
     "whatsapp": "Hi Bray, I have a question.",
@@ -138,7 +138,7 @@
     "how": {
       "heading": "What you can expect",
       "paragraphs": [
-        "Speed, close communication, and a site built around you.",
+        "Speed, close communication, and a site built from scratch around you.",
         "A website usually takes three or four months. With me, a lot less. We talk on WhatsApp. You see it soon. We adjust until it fits."
       ]
     },
@@ -176,6 +176,6 @@
     "switch": "Switch to Spanish"
   },
   "footer": {
-    "note": "Websites"
+    "note": "Websites from scratch"
   }
 }

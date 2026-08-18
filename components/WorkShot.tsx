@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Seal } from "@/components/Seal";
 
 export function WorkShot({
   href,
@@ -37,9 +38,10 @@ export function WorkShot({
           className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.025]"
         />
         <span className="absolute inset-0 bg-dark/0 transition-colors duration-300 group-hover:bg-dark/20" />
-        <span className="bg-light text-dark absolute right-4 bottom-4 rounded-full px-3 py-1.5 text-xs opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <span className="bg-light text-dark absolute bottom-4 left-4 rounded-full px-3 py-1.5 text-xs opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           {visit}
         </span>
+        <Seal />
       </div>
     </a>
   );

@@ -8,7 +8,7 @@ import { Header } from "@/components/Header";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { WhatsAppCue } from "@/components/WhatsAppCue";
-import { site } from "@/lib/site";
+import { site, siteUrl } from "@/lib/site";
 import "../globals.css";
 
 const sans = Inter({
@@ -32,13 +32,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 
   return {
+    metadataBase: new URL(siteUrl()),
     title: messages.meta.title,
     description: messages.meta.description,
+    icons: {
+      icon: [
+        { url: "/icon-b-v2.png", type: "image/png", sizes: "512x512" },
+        { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      ],
+      apple: "/apple-touch-icon.png",
+    },
     openGraph: {
-      title: site.name,
+      title: messages.meta.title,
       description: messages.meta.description,
       locale: locale === "en" ? "en_US" : "es_PE",
       type: "website",
+      siteName: site.name,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: messages.meta.title,
+      description: messages.meta.description,
     },
   };
 }
