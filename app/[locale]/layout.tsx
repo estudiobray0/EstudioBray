@@ -56,7 +56,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: "/",
       images: [
         {
-          url: "/share.png",
+          url: "/share.jpg",
+          secureUrl: "/share.jpg",
+          type: "image/jpeg",
           width: 1200,
           height: 630,
           alt: messages.meta.title,
@@ -67,7 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: messages.meta.title,
       description: messages.meta.description,
-      images: ["/share.png"],
+      images: ["/share.jpg"],
     },
   };
 }
