@@ -18,10 +18,11 @@ export default async function Image({
   const { locale } = await params;
   const en = locale === "en";
 
-  const [regular, semibold, mark] = await Promise.all([
+  const [regular, semibold, mark, portrait] = await Promise.all([
     readFile(join(process.cwd(), "fonts/Inter-Regular.ttf")),
     readFile(join(process.cwd(), "fonts/Inter-SemiBold.ttf")),
     readFile(join(process.cwd(), "public/icon-b-v2.png")),
+    readFile(join(process.cwd(), "public/bray-portrait.png")),
   ]);
 
   const copy = en
@@ -116,7 +117,7 @@ export default async function Image({
                 fontWeight: 600,
                 lineHeight: 1.05,
                 letterSpacing: "-0.04em",
-                maxWidth: 720,
+                maxWidth: 640,
               }}
             >
               {copy.title}
@@ -143,11 +144,34 @@ export default async function Image({
             justifyContent: "center",
           }}
         >
+          <div
+            style={{
+              display: "flex",
+              width: 248,
+              height: 310,
+              overflow: "hidden",
+              borderRadius: 24,
+              border: "1px solid #d4c8ba",
+              background: "#fff",
+            }}
+          >
+            <img
+              src={`data:image/jpeg;base64,${portrait.toString("base64")}`}
+              width={248}
+              height={310}
+              alt=""
+              style={{
+                objectFit: "cover",
+                objectPosition: "58% 12%",
+              }}
+            />
+          </div>
           <img
             src={`data:image/png;base64,${mark.toString("base64")}`}
-            width={220}
-            height={220}
+            width={168}
+            height={168}
             alt=""
+            style={{ marginLeft: 28 }}
           />
         </div>
       </div>
