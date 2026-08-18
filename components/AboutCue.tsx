@@ -10,7 +10,7 @@ export function AboutCue({
   label: string;
 }) {
   return (
-    <Link href="/about" className="group block w-full max-w-[22.5rem]">
+    <Link href="/about" className="group block w-full max-w-[16rem] lg:max-w-[22.5rem]">
       <span className="text-sage mb-3 block text-sm">{credit}</span>
       <span className="block overflow-hidden rounded-xl border border-line bg-white">
         <span className="flex items-center gap-1.5 border-b border-line bg-white px-3 py-2">
@@ -45,7 +45,7 @@ export function AboutCue({
           />
         </svg>
       </span>
-      <Signature className="mt-3 w-56" />
+      <Signature className="mt-3 w-40 lg:w-56" />
     </Link>
   );
 }

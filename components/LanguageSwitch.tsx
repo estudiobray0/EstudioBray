@@ -13,7 +13,7 @@ export function LanguageSwitch() {
     <Link
       href={pathname}
       locale={otherLocale}
-      className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-blue"
+      className="inline-flex min-h-11 items-center gap-1.5 text-sm text-muted transition-colors hover:text-blue lg:min-h-0"
       aria-label={t("switch")}
       title={t("switch")}
     >

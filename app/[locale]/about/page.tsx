@@ -35,14 +35,14 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <main className="flex-1">
-      <section className="mx-auto max-w-6xl px-6 pt-16 pb-12 sm:pt-24">
+      <section className="mx-auto max-w-6xl px-5 pt-10 pb-12 sm:px-6 sm:pt-24">
         <p className="text-sage text-sm">{t("kicker")}</p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
           {t("title")}
         </h1>
 
-        <div className="mt-12 grid items-start gap-10 lg:grid-cols-[minmax(18rem,22rem)_1fr] lg:gap-14">
-          <div className="space-y-4">
+        <div className="mt-10 grid items-start gap-10 lg:mt-12 lg:grid-cols-[minmax(18rem,22rem)_1fr] lg:gap-14">
+          <div className="grid grid-cols-2 gap-3 lg:grid-cols-1 lg:gap-4">
             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-line">
               <Image
                 src="/bray-portrait.png"
@@ -84,7 +84,7 @@ export default async function AboutPage({ params }: Props) {
             </div>
 
             <WhatsAppLink
-              className="btn-primary mt-12 inline-flex rounded-full px-5 py-2.5 text-sm"
+              className="btn-primary mt-10 inline-flex w-full justify-center rounded-full px-5 py-3 text-sm sm:mt-12 sm:w-auto sm:py-2.5"
               text={t("whatsapp")}
             >
               {t("cta")}

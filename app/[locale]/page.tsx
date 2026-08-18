@@ -20,9 +20,9 @@ export default async function Home({ params }: Props) {
   return (
     <div className="flex flex-1 flex-col">
       <main className="flex-1">
-        <section id="inicio" className="mx-auto max-w-6xl px-6 pt-8 pb-16 sm:pt-12 sm:pb-20">
-          <div className="grid items-stretch gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
-            <div className="order-2 flex flex-col lg:order-1 lg:min-h-full">
+        <section id="inicio" className="mx-auto max-w-6xl px-5 pt-6 pb-12 sm:px-6 sm:pt-12 sm:pb-20">
+          <div className="grid items-stretch gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
+            <div className="flex flex-col lg:min-h-full">
               <p className="reveal text-sage mb-3 text-sm">{t("hero.kicker")}</p>
               <h1 className="reveal max-w-xl text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
                 {t("hero.title")}
@@ -35,7 +35,7 @@ export default async function Home({ params }: Props) {
               </p>
               <div className="reveal reveal-delay-2 mt-8 flex flex-wrap items-center gap-4">
                 <WhatsAppLink
-                  className="btn-primary rounded-full px-5 py-2.5 text-sm"
+                  className="btn-primary inline-flex w-full justify-center rounded-full px-5 py-3 text-sm sm:w-auto sm:py-2.5"
                   text={t("hero.whatsapp")}
                 >
                   {t("hero.cta")}
@@ -49,7 +49,7 @@ export default async function Home({ params }: Props) {
               </div>
             </div>
 
-            <div id="vivi" className="reveal reveal-delay-1 order-1 scroll-mt-24 lg:order-2">
+            <div id="vivi" className="reveal reveal-delay-1 scroll-mt-24">
               <p className="text-sage mb-3 text-sm">{t("work.featured")}</p>
               <WorkShot
                 href={featuredWork.href}
@@ -78,7 +78,7 @@ export default async function Home({ params }: Props) {
                   href={featuredWork.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-blue mt-2 block break-all text-sm underline decoration-[#7a9db9]/35 underline-offset-4 hover:text-ink"
+                  className="text-blue mt-2 hidden break-all text-sm underline decoration-[#7a9db9]/35 underline-offset-4 hover:text-ink sm:block"
                 >
                   {featuredWork.href}
                 </a>
@@ -104,14 +104,14 @@ export default async function Home({ params }: Props) {
         </section>
 
         <section id="proceso" className="scroll-mt-24 border-t border-line/70">
-          <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-20">
             <div className="flex items-baseline gap-3">
               <span className="text-sage text-sm">01</span>
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
                 {t("process.title")}
               </h2>
             </div>
-            <ol className="mt-10 flex items-start overflow-x-auto pb-1">
+            <ol className="mt-8 flex flex-col gap-6 lg:mt-10 lg:flex-row lg:items-start lg:gap-0 lg:overflow-x-auto lg:pb-1">
               {stepIds.map((id, index) => {
                 const tones = [
                   "text-brown",
@@ -120,10 +120,7 @@ export default async function Home({ params }: Props) {
                   "text-brown",
                 ] as const;
                 return (
-                  <li
-                    key={id}
-                    className="flex min-w-[10.5rem] items-start sm:min-w-0 sm:flex-1"
-                  >
+                  <li key={id} className="flex items-start lg:min-w-0 lg:flex-1">
                     <div className="min-w-0 flex-1">
                       <div className={`flex items-center gap-2 ${tones[index]}`}>
                         <ProcessStepIcon id={id} />
@@ -131,7 +128,7 @@ export default async function Home({ params }: Props) {
                           {t(`process.steps.${id}.title`)}
                         </h3>
                       </div>
-                      <p className="mt-2 max-w-[14rem] text-sm leading-relaxed text-muted">
+                      <p className="mt-2 max-w-none text-sm leading-relaxed text-muted lg:max-w-[14rem]">
                         {t(`process.steps.${id}.body`)}
                       </p>
                     </div>
@@ -139,7 +136,7 @@ export default async function Home({ params }: Props) {
                       <svg
                         viewBox="0 0 16 16"
                         aria-hidden
-                        className="text-brown mt-1 mx-2.5 size-3.5 shrink-0 sm:mx-3"
+                        className="text-brown mt-1 mx-2.5 hidden size-3.5 shrink-0 lg:mx-3 lg:block"
                       >
                         <path
                           d="M3 8h9M8 4l5 4-5 4"
@@ -159,7 +156,7 @@ export default async function Home({ params }: Props) {
         </section>
 
         <section id="trabajos" className="border-t border-line/70">
-          <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-20">
             <div className="flex items-baseline gap-3">
               <span className="text-sage text-sm">02</span>
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -199,7 +196,7 @@ export default async function Home({ params }: Props) {
                         href={work.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-blue mt-2 block break-all text-sm underline decoration-[#7a9db9]/35 underline-offset-4 hover:text-ink"
+                        className="text-blue mt-2 hidden break-all text-sm underline decoration-[#7a9db9]/35 underline-offset-4 hover:text-ink sm:block"
                       >
                         {work.href}
                       </a>
@@ -213,7 +210,7 @@ export default async function Home({ params }: Props) {
         </section>
 
         <section id="servicios" className="border-t border-line/70">
-          <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-20">
             <div className="flex items-baseline gap-3">
               <span className="text-blue text-sm">03</span>
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -274,7 +271,7 @@ export default async function Home({ params }: Props) {
         </section>
 
         <section id="contacto" className="bg-dark text-light">
-          <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
+          <div className="mx-auto max-w-6xl px-5 py-16 pb-28 sm:px-6 sm:py-24 lg:pb-24">
             <p className="text-blue text-sm">04</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
               {t("contact.title")}
@@ -283,7 +280,7 @@ export default async function Home({ params }: Props) {
               {t("contact.body")}
             </p>
             <WhatsAppLink
-              className="btn-primary mt-8 inline-flex rounded-full px-5 py-2.5 text-sm"
+              className="btn-primary mt-8 inline-flex w-full justify-center rounded-full px-5 py-3 text-sm sm:w-auto sm:py-2.5"
               text={t("contact.whatsapp")}
             >
               {t("contact.cta")}

@@ -94,7 +94,7 @@ export function WhatsAppCue() {
   }
 
   return (
-    <div className="pointer-events-none fixed right-4 bottom-5 z-50 sm:right-6 sm:bottom-8">
+    <div className="pointer-events-none fixed right-4 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-50 hidden sm:right-6 sm:bottom-8 lg:block">
       <div
         className="pointer-events-auto flex flex-col items-end gap-2"
         onMouseEnter={stayOpen}
@@ -158,7 +158,7 @@ export function WhatsAppCue() {
           onClick={() => openPanel()}
           tabIndex={promptOpen ? 0 : -1}
           aria-hidden={!promptOpen}
-          className={`pointer-events-auto max-w-[12.5rem] rounded-2xl rounded-br-md border border-line bg-white px-3 py-2 text-left text-xs leading-snug text-ink transition-colors hover:border-sage ${
+          className={`pointer-events-auto hidden max-w-[12.5rem] rounded-2xl rounded-br-md border border-line bg-white px-3 py-2 text-left text-xs leading-snug text-ink transition-colors hover:border-sage lg:block ${
             promptOpen ? "chat-prompt-in" : "chat-prompt-out"
           }`}
         >
@@ -173,7 +173,9 @@ export function WhatsAppCue() {
         onMouseEnter={() => {
           playWave();
           stayOpen();
-          openPanel(true);
+          if (window.matchMedia("(hover: hover)").matches) {
+            openPanel(true);
+          }
         }}
         onClick={() => {
           playWave();
@@ -187,7 +189,7 @@ export function WhatsAppCue() {
         aria-expanded={panelOpen}
         aria-controls={panelOpen ? panelId : undefined}
         aria-label={panelOpen ? t("close") : t("open")}
-        className={`chat-dots flex items-center gap-1.5 p-1 ${
+        className={`chat-dots flex min-h-11 min-w-11 items-center justify-end gap-1.5 p-2 lg:min-h-0 lg:min-w-0 lg:p-1 ${
           burst ? "chat-dots--burst" : ""
         }`}
       >

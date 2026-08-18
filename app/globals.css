@@ -31,12 +31,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: clip;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body::before {
@@ -92,6 +95,7 @@ body::before {
 .btn-primary {
   background: var(--sage);
   color: #fff;
+  touch-action: manipulation;
   transition:
     background 0.25s ease,
     transform 0.25s ease;
@@ -298,6 +302,28 @@ body::before {
 
 .seal-header .seal-mark {
   width: 1.2rem;
+}
+
+@media (max-width: 1023px) {
+  .seal-header {
+    width: 1.55rem;
+    height: 1.55rem;
+  }
+
+  .seal-header .seal-mark {
+    width: 1rem;
+  }
+
+  .seal-shot {
+    width: 2.55rem;
+    height: 2.55rem;
+    right: 0.35rem;
+    bottom: 0.35rem;
+  }
+
+  .seal-shot .seal-mark {
+    width: 1.7rem;
+  }
 }
 
 .seal-mark {
