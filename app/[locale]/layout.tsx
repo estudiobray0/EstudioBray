@@ -53,11 +53,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: locale === "en" ? "en_US" : "es_PE",
       type: "website",
       siteName: site.name,
+      url: "/",
+      images: [
+        {
+          url: "/share.png",
+          width: 1200,
+          height: 630,
+          alt: messages.meta.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: messages.meta.title,
       description: messages.meta.description,
+      images: ["/share.png"],
     },
   };
 }
