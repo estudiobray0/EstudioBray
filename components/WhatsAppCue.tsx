@@ -11,7 +11,8 @@ export function WhatsAppCue() {
   const t = useTranslations("chat");
   const panelId = useId();
   const [panelOpen, setPanelOpen] = useState(false);
-  const [promptOpen, setPromptOpen] = useState(true);
+  const [promptOpen, setPromptOpen] = useState(false);
+  const [promptSeen, setPromptSeen] = useState(false);
   const [draft, setDraft] = useState("");
   const [burst, setBurst] = useState(false);
   const field = useRef<HTMLTextAreaElement>(null);
@@ -40,18 +41,29 @@ export function WhatsAppCue() {
 
     let hideTimer = 0;
     let showTimer = 0;
+    const phone = window.matchMedia("(max-width: 1023px)").matches;
+    const showFor = phone ? 4500 : SHOW_MS;
+    const hideFor = phone ? 14000 : HIDE_MS;
 
     const hide = () => {
       setPromptOpen(false);
-      showTimer = window.setTimeout(show, HIDE_MS);
+      showTimer = window.setTimeout(show, hideFor);
     };
 
     const show = () => {
+      setPromptSeen(true);
       setPromptOpen(true);
-      hideTimer = window.setTimeout(hide, SHOW_MS);
+      hideTimer = window.setTimeout(hide, showFor);
     };
 
-    hideTimer = window.setTimeout(hide, SHOW_MS);
+    if (phone) {
+      setPromptOpen(false);
+      showTimer = window.setTimeout(show, 2000);
+    } else {
+      setPromptSeen(true);
+      setPromptOpen(true);
+      hideTimer = window.setTimeout(hide, showFor);
+    }
 
     return () => {
       window.clearTimeout(hideTimer);
@@ -96,7 +108,7 @@ export function WhatsAppCue() {
   return (
     <div className="pointer-events-none fixed right-4 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-50 sm:right-6 sm:bottom-8">
       <div
-        className="pointer-events-auto flex flex-col items-end gap-2"
+        className="pointer-events-auto relative flex flex-col items-end gap-2"
         onMouseEnter={stayOpen}
         onMouseLeave={closeSoon}
       >
@@ -158,14 +170,21 @@ export function WhatsAppCue() {
           onClick={() => openPanel()}
           tabIndex={promptOpen ? 0 : -1}
           aria-hidden={!promptOpen}
-          className={`pointer-events-auto hidden max-w-[12.5rem] rounded-2xl rounded-br-md border border-line bg-white px-3 py-2 text-left text-xs leading-snug text-ink transition-colors hover:border-sage lg:block ${
-            promptOpen ? "chat-prompt-in" : "chat-prompt-out"
+          className={`pointer-events-auto max-w-[9.75rem] rounded-2xl rounded-br-md border border-line bg-white px-2.5 py-1.5 text-left text-[11px] leading-snug text-ink transition-colors hover:border-sage max-lg:absolute max-lg:right-0 max-lg:bottom-[3.4rem] lg:max-w-[12.5rem] lg:px-3 lg:py-2 lg:text-xs ${
+            promptOpen
+              ? "chat-prompt-in"
+              : promptSeen
+                ? "chat-prompt-out"
+                : "hidden"
           }`}
         >
           <span className="text-sage mb-0.5 block text-[10px] font-medium tracking-[0.14em] uppercase">
             {t("name")}
           </span>
-          {t("question")} {t("cta")}
+          <span className="lg:hidden">{t("question")}</span>
+          <span className="hidden lg:inline">
+            {t("question")} {t("cta")}
+          </span>
         </button>
       )}
       <button
