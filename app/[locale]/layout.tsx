@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -98,6 +99,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <WhatsAppCue />
           </div>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
